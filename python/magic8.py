@@ -1,11 +1,11 @@
 import random
 
-name = "King Julian"
-question = "Are apples fruit?"
+name = ""
+question = ""
 answer = ""
-random_number = random.randint(1,9)
+random_number = random.randint(1,11)
 
-print(random_number)
+# print(random_number)
 
 if random_number == 1:
   answer = "Yes - definitely."
@@ -25,7 +25,20 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9:
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "Wot m8?"
+elif random_number == 11:
+  answer = "Run."
 else:
   answer = "Error"
 
-print(answer)
+if question == "" and name == "":
+  print("Go home.")
+elif question == "":
+  print("Stahp it.")
+elif name == "":
+  print("Question: " + question)
+  print("Magic 8 Ball's answer: " + answer)
+else:
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
