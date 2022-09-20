@@ -21,3 +21,5 @@ gradebook[2].remove(85)
 
 gradebook[2].append("Pass")
 print(gradebook)
+
+full_gradebook = last_semester_gradebook + gradebook
